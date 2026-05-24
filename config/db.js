@@ -10,6 +10,8 @@ const dbConnect=async()=>{
     console.log("database connected successfully",success.connection.name);
     
 }).catch ((err)=>{
+    alert("error while establishing connetion ",err);
         console.log("error while establishing connetion ",err)}
+
     )}
 export default dbConnect
