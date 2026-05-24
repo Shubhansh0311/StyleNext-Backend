@@ -7,10 +7,11 @@ const dbConnect=async()=>{
         
        const db=await mongoose.connect("mongodb+srv://shubhansh:shubhansh@cluster0.ia7xyfr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/Ecommerce"
 ).then((success)=>{
+    alert("database connected successfully");
     console.log("database connected successfully",success.connection.name);
     
 }).catch ((err)=>{
-    alert("error while establishing connetion ",err);
+    
         console.log("error while establishing connetion ",err)}
 
     )}
